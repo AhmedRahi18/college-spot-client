@@ -50,7 +50,7 @@ const Login = () => {
           name: googleUser.displayName,
           email: googleUser.email,
         };
-        fetch("http://localhost:5000/users", {
+        fetch("https://college-spot-server-ahmedrahi18.vercel.app/users", {
           method: "POST",
           headers: {
             "content-type": "application/json",

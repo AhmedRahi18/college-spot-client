@@ -12,6 +12,7 @@ import Register from './components/Register/Register';
 import Login from './components/Login/Login';
 import Profile from './components/Profile/Profile';
 import Forgot from './components/Forgot/Forgot';
+import Error from './components/Error/Error';
 
 const router = createBrowserRouter([
   {
@@ -37,8 +38,13 @@ const router = createBrowserRouter([
       {
         path: 'forgot',
         element: <Forgot></Forgot>
-      }
+      },
+      
     ]
+  },
+  {
+    path: '*',
+    element: <Error></Error>
   },
 ]);
 
